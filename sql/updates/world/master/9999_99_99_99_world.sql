@@ -9,3 +9,6 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,0,0,0,0,100,0,2000,4500,14000,15000,11,3147,0,0,0,0,0,2,0,0,0,0,0,0,0,'Trained Razorbeak - In Combat - Cast Rend Flesh'),
 (@ENTRY,0,1,2,8,0,100,0,80782,0,0,0,33,43236,0,0,0,0,0,7,0,0,0,0,0,0,0,'Trained Razorbeak - On Spellhit Feed Trained Razorbeak - Quest Credit'),
 (@ENTRY,0,2,0,61,0,100,0,0,0,0,0,41,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Trained Razorbeak - On link - Despawn Instant');
+
+-- This allow player to complete quest with items choice
+UPDATE quest_template SET RewardChoiceItemId1 = 59235,RewardChoiceItemQuantity1 = 1,RewardChoiceItemId2 = 59236,RewardChoiceItemQuantity2 = 1,RewardChoiceItemId3 = 59237,RewardChoiceItemQuantity3 = 1,RewardChoiceItemId4 = 59238,RewardChoiceItemQuantity4 = 1,RewardChoiceItemId5 = 134553,RewardChoiceItemQuantity5 = 1 WHERE Id=26546;
